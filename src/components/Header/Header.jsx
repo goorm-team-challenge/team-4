@@ -4,16 +4,16 @@ import { Button, Typography } from '@goorm-dev/gds-challenge';
 
 import styles from './Header.module.scss';
 
-const Header = ({handleToggle}) => {
-
-
+const Header = ({ toggle }) => {
 	return (
 		<header className={cn(styles.header)}>
 			<div className={cn(styles.contents)}>
 				<Typography token="h5">
 					구름톤 챌린지 참여자 정보 수집
 				</Typography>
-				<Button size="lg" onClick={handleToggle}>설문조사 참여하기</Button>
+				<Button size="lg" onClick={toggle}>
+					설문조사 참여하기
+				</Button>
 			</div>
 		</header>
 	);

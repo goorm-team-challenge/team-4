@@ -7,22 +7,20 @@ import styles from './App.module.scss';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
-	const handleToggle = (e) => {
+	const toggle = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
-		setIsOpen(!isOpen)
-	}
+		setIsOpen(!isOpen);
+	};
 
 	return (
-		<>
-			<div className={styles.App}>
-				<Header handleToggle={handleToggle}/>
-				<main className={styles.main}>
-					<EmptyView />
-				</main>
-				<Modal isOpen={isOpen} toggle={handleToggle}/>
-			</div>
-		</>	
+		<div className={styles.App}>
+			<Header toggle={toggle} />
+			<main className={styles.main}>
+				<EmptyView />
+			</main>
+			<Modal isOpen={isOpen} toggle={toggle} />
+		</div>
 	);
 }
 

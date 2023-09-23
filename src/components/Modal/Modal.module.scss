@@ -1,0 +1,25 @@
+.circleContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.circleActive {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #5094fa;
+}
+
+.circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #cdced6;
+}
+
+.buttonContainer {
+	display: flex;
+	gap: 8px;
+}
